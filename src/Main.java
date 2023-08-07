@@ -1,17 +1,26 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        task_1();
+        task_2();
+    }
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    public static void task_1() {
+        System.out.println("Задача 1"); // Вывести ФИО
+        String firstName = "Ivan";
+        String midlleName = "Ivanovich";
+        String lasrtName = "Ivanov";
+        String fullName = lasrtName + " " + firstName + " " + midlleName;
+        System.out.println("ФИО сотрудника - " + fullName);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Задача 2"); //вывести ФИО заглавными
+        String fullNameCase = fullName.toUpperCase();
+        System.out.println("ФИО сотрудника - " + fullNameCase);
+
+    }
+    public static void task_2(){
+        System.out.println("Задача 3");
+        String fullName = "Семёнов Семён Семёнович";
+        String fullNameNew = fullName.replace("ё", "е");
+        System.out.println("ФИО сотрудника - " + fullNameNew);
     }
 }
